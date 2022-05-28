@@ -9,12 +9,14 @@ phone:  +7-924-451-05-10
 email:  batorbb@gmail.com
 
 github: [BatBB](https://github.com/BatBB)
+
 ___
 
 ## About Me
 
 I am currently working as an engineer. Servicing banking equipment.
 Decided to change career. I want to try myself as front-end developer.
+
 ___
 
 ## Experieance
@@ -37,7 +39,9 @@ ___
 ## Code Example
 
 ```JaxaScript
-
+function multiply(a, b){
+  return a * b
+}
 
 ```
 
