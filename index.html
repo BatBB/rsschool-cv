@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bator Baldanov CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -13,19 +19,31 @@
       <div class="container">
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-items"><a href="#" class="nav_link">Profile</a></li>
-            <li class="nav-items"><a href="#" class="nav_link">Contacts</a></li>
-            <li class="nav-items"><a href="#" class="nav_link">Summary</a></li>
-            <li class="nav-items"><a href="#" class="nav_link">Skills</a></li>
-            <li class="nav-items"><a href="#" class="nav_link">Code</a></li>
-            <li class="nav-items"><a href="#" class="nav_link">Projects</a></li>
             <li class="nav-items">
-              <a href="#" class="nav_link">Education</a>
+              <a href="#profile" class="nav-link">Profile</a>
             </li>
             <li class="nav-items">
-              <a href="#" class="nav_link">Experience</a>
+              <a href="#contacts" class="nav-link">Contacts</a>
             </li>
-            <li class="nav-items"><a href="#" class="nav_link">Language</a></li>
+            <li class="nav-items">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-items">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-items"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-items">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-items">
+              <a href="#education" class="nav_link">Education</a>
+            </li>
+            <li class="nav-items">
+              <a href="#expirience" class="nav_link">Experience</a>
+            </li>
+            <li class="nav-items">
+              <a href="#language" class="nav_link">Language</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -34,22 +52,114 @@
 
     <main class="main">
       <div class="container column">
+        <!-- Left column start -->
         <div class="column-left">
-          <section class="photo">
+          <section class="photo section">
             <img
               class="photo-img"
               src="./assets/img/avatar.jpg"
               alt="Photo Bator Baldanov"
             />
           </section>
-        </div>
 
-        <div class="column-right">
-          <section class="profile">
-            <h1 class="name">Bator Baldanov</h1>
-            <h3 class="job">Frontend Development</h3>
+          <section class="cotacts section" id="contacts">
+            <h2 class="section-title title-left">Contacts</h2>
+            <ul class="cotact-list">
+              <li class="contact-item">Location: Russia, Ulan-Ude</li>
+              <li class="contact-item">
+                Discord:
+                <a
+                  href="https://discordapp.com/users/Bator#6633"
+                  class="discord"
+                  >Bator#6633</a
+                >
+              </li>
+              <li class="contact-item">
+                Email:
+                <a href="mailto:batorbb@gmail.com" class="mail"
+                  >batorbb@gmail.com</a
+                >
+              </li>
+              <li class="contact-item">
+                Github:
+                <a href="https://github.com/BatBB" class="github">BatBB</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="language section" id="language">
+            <h2 class="section-title title-left">Language</h2>
+            <ul class="lang-list">
+              <li class="lang-item">Russian: native</li>
+              <li class="lang-item">Buryat: native</li>
+              <li class="lang-item">English: A2</li>
+            </ul>
           </section>
         </div>
+        <!-- Left column end -->
+
+        <!-- Right column start -->
+        <div class="column-right">
+          <section class="profile section" id="profile">
+            <h1 class="name">Bator Baldanov</h1>
+            <p class="job">Frontend Development</p>
+          </section>
+
+          <section class="summary section" id="summary">
+            <h2 class="section-title title-right">About Me</h2>
+            <p class="summary-text">
+              I am currently working as an engineer. Servicing banking
+              equipment. Decided to change career. I want to try myself as
+              frontend developer.
+            </p>
+          </section>
+
+          <section class="education section" id="education">
+            <h2 class="section-title title-right">Education</h2>
+            <p class="education-text">
+              2022-present JavaScript/Front-end
+              <span><a href="http://rs.school">RS-School</a></span>
+            </p>
+            <p class="education-text">
+              2005-2010 Engineer specializing in Computers, complexes, systems
+              and networks
+              <span><a href="http://esstu.ru">ESSTUM</a></span> Ulan-Ude
+            </p>
+          </section>
+
+          <section class="experience section" id="experience">
+            <h2 class="section-title title-right">Experience</h2>
+            <p class="experience">2014-Present Service Engineer</p>
+          </section>
+
+          <section class="skills section" id="skills">
+            <h2 class="section-title title-right">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-item">HTML: 
+                  <progress class="skills-progress" max="100" value="50">html</progress>
+              </li>
+              <li class="skills-item">CSS<progress class="skills-progress" max="100" value="30">html</progress></li>
+              <li class="skills-item">JavaScript <progress class="skills-progress" max="100" value="5">JS</progress></li>
+              <li class="skills-item">
+                Codewars:
+                <img
+                  class="codewar-img"
+                  src="https://www.codewars.com/users/BatBB/badges/micro"
+                  alt="Codewar kyu"
+                />
+              </li>
+            </ul>
+          </section>
+
+          <section class="code section" id="code">
+            <h2 class="section-title title-right">Code</h2>
+          </section>
+
+          <section class="projects section" id="projects">
+            <h2 class="section-title title-right">My projects</h2>
+          </section>
+        </div>
+        <!-- Right column start -->
       </div>
     </main>
   </body>
