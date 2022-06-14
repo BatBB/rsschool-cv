@@ -6,7 +6,7 @@
 
 html{
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 a{
@@ -64,7 +64,6 @@ ul{
 .column-left{
   flex-basis: 400px;
   background-color: #393939;
-  height: 100vh;
   padding-left: 40px;
   color: #ddd;
 }
@@ -110,4 +109,56 @@ ul{
     height: 30px;
     vertical-align: -9px;
     accent-color: #393939;
+}
+
+.pre{
+  background-color: #101010;
+  margin: 0 50px 50px;
+}
+
+.code-keyword{
+  color: darkorchid;
+}
+
+.code-func{
+  color: bisque;
+}
+
+.code-operation{
+  color: azure;
+}
+
+.code-string{
+  color: aquamarine;
+}
+
+.code-var{
+  color: burlywood;
+}
+
+.code-number{
+  color: limegreen;
+}
+
+.code-bracket{
+  color: aliceblue;
+}
+
+.footer{
+  background-color: #999;
+}
+
+.footer-list{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-github{
+  height: 40px;
+}
+
+.logo-rs{
+  height: 40px;
 }

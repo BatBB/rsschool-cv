@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header navigation start -->
+    <!-- Header navigation -->
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -31,10 +31,12 @@
             <li class="nav-items">
               <a href="#skills" class="nav-link">Skills</a>
             </li>
-            <li class="nav-items"><a href="#code" class="nav-link">Code</a></li>
             <li class="nav-items">
-              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#code-example" class="nav-link">Code example</a>
             </li>
+            <!-- <li class="nav-items">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li> -->
             <li class="nav-items">
               <a href="#education" class="nav_link">Education</a>
             </li>
@@ -48,11 +50,11 @@
         </nav>
       </div>
     </header>
-    <!-- Header navigation end-->
+    <!-- / Header navigation -->
 
     <main class="main">
       <div class="container column">
-        <!-- Left column start -->
+        <!-- Left column -->
         <div class="column-left">
           <section class="photo section">
             <img
@@ -71,8 +73,8 @@
                 <a
                   href="https://discordapp.com/users/Bator#6633"
                   class="discord"
-                  >Bator#6633</a
-                >
+                  >Bator#6633
+                </a>
               </li>
               <li class="contact-item">
                 Email:
@@ -96,9 +98,9 @@
             </ul>
           </section>
         </div>
-        <!-- Left column end -->
+        <!-- / Left column -->
 
-        <!-- Right column start -->
+        <!-- Right column -->
         <div class="column-right">
           <section class="profile section" id="profile">
             <h1 class="name">Bator Baldanov</h1>
@@ -135,11 +137,23 @@
           <section class="skills section" id="skills">
             <h2 class="section-title title-right">Skills</h2>
             <ul class="skills-list">
-              <li class="skills-item">HTML: 
-                  <progress class="skills-progress" max="100" value="50">html</progress>
+              <li class="skills-item">
+                HTML:
+                <progress class="skills-progress" max="100" value="50">
+                  HTML
+                </progress>
               </li>
-              <li class="skills-item">CSS<progress class="skills-progress" max="100" value="30">html</progress></li>
-              <li class="skills-item">JavaScript <progress class="skills-progress" max="100" value="5">JS</progress></li>
+              <li class="skills-item">
+                CSS<progress class="skills-progress" max="100" value="30">
+                  CSS
+                </progress>
+              </li>
+              <li class="skills-item">
+                JavaScript
+                <progress class="skills-progress" max="100" value="5">
+                  JS
+                </progress>
+              </li>
               <li class="skills-item">
                 Codewars:
                 <img
@@ -151,16 +165,54 @@
             </ul>
           </section>
 
-          <section class="code section" id="code">
-            <h2 class="section-title title-right">Code</h2>
+          <section class="code-example section" id="code-example">
+            <h2 class="section-title title-right">Code example:</h2>
+            <pre class="pre">
+              <code class="code">
+                <span class="code-keyword">let</span> <span class="code-func">oddOrEven</span> <span class="code-operation">=</span> <span class="code-var">array</span> <span class="code-keyword">=></span> <span class="code-bracket">{</span>
+                  <span class="code-keyword">let</span> <span class="code-var">sum</span> <span class="code-operation">=</span> <span class="code-number">0</span><span class="code-operation">;</span>
+                  <span class="code-keyword">for</span> <span class="code-bracket">(</span><span class="code-keyword">let</span> <span class="code-var">i</span> <span class="code-keyword">of</span> <span class="code-var">array</span><span class="code-bracket">){</span>
+                    <span class="code-var">sum</span> <span class="code-operation">+=</span> <span class="code-var">i</span><span class="code-operation">;</span>
+                  <span class="code-bracket">}</span>
+                  <span class="code-keyword">return</span> <span class="code-bracket">(</span><span class="code-var">sum</span> <span class="code-operation">%</span> <span class="code-number">2</span><span class="code-bracket">)</span> <span class="code-operation">?</span> <span class="code-string">'odd'</span> <span class="code-operation">:</span> <span class="code-string">'even'</span><span class="code-operation">;</span>
+                <span class="code-bracket">}</span>
+              </code>
+            </pre>
           </section>
 
-          <section class="projects section" id="projects">
-            <h2 class="section-title title-right">My projects</h2>
-          </section>
+          <!-- <section class="projects section" id="projects">
+            <h2 class="section-title title-right">My projects:</h2>
+            <div class="project-view">https://github.com/BatBB/rsschool-cv</div>
+          </section> -->
         </div>
-        <!-- Right column start -->
+        <!-- Right column -->
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="https://github.com/BatBB" class="github-link">
+              <img
+                src="/assets/logo/GitHub-Mark-Light-120px-plus.png"
+                alt="Github logo"
+                class="logo-github"
+              />
+            </a>
+          </li>
+          <li class="footer-item">2022</li>
+          <li class="footer-item">
+            <a href="https://rs.school/js/" class="rsschool-link">
+              <img
+                src="/assets/logo/rs_school_js.svg"
+                alt="RS-School logo"
+                class="logo-rs"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
