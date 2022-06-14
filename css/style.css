@@ -1,3 +1,165 @@
 *{
-    background-color: blue;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 20px; */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+}
+.header{
+  height: 50px;
+  background-color: #999;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-list{
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-around;
+}
+
+.column{
+  display: flex;
+  flex-direction: row;
+}
+.section{
+    line-height: 1.5;
+}
+.section + .section{
+  margin-top: 50px;
+}
+
+.section-title{
+    font-size: 24px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.name{
+  font-size: 64px;  
+}
+
+.job{
+    font-size: 24px;
+}
+
+.title-left{
+  border-bottom: 2px solid #ddd;
+}
+
+.column-left{
+  flex-basis: 400px;
+  background-color: #393939;
+  padding-left: 40px;
+  color: #ddd;
+}
+
+.photo{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.photo-img{
+  max-width: 230px;
+  border-radius: 50%;
+}
+
+.column-right{
+  flex-basis: 800px;
+  background-color: #ddd;
+  padding-left: 40px;
+}
+
+.title-right{
+    border-bottom: 2px solid #393939;
+  }
+
+.profile{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+.codewar-img{
+    max-width: 200px;
+}
+.skills-progress{
+    width: 200px;
+    height: 30px;
+    vertical-align: -9px;
+    accent-color: #393939;
+}
+
+.pre{
+  background-color: #101010;
+  margin: 0 50px 50px;
+}
+
+.code-keyword{
+  color: darkorchid;
+}
+
+.code-func{
+  color: bisque;
+}
+
+.code-operation{
+  color: azure;
+}
+
+.code-string{
+  color: aquamarine;
+}
+
+.code-var{
+  color: burlywood;
+}
+
+.code-number{
+  color: limegreen;
+}
+
+.code-bracket{
+  color: aliceblue;
+}
+
+.footer{
+  background-color: #999;
+}
+
+.footer-list{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-github{
+  height: 40px;
+}
+
+.logo-rs{
+  height: 40px;
 }
