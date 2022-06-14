@@ -1,1 +1,1 @@
-https://batbb.github.io/rsschool-cv/cv
+https://batbb.github.io/rsschool-cv
